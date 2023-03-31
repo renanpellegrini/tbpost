@@ -6,17 +6,32 @@
 
 header {
     display: flex;
-    background-color: black;
     align-items: center;
     color: white;
-    padding: 32px 0px;
+    padding: 20px;
 }
 
-header h1,
-header nav ul li {
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 32px;
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    max-width: 120px;
+    width: 100%;
+}
+
+.h1 {
+    color: black !important;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 20px;
+    font-size: 40px;
     font-weight: normal;
+}
+
+header nav ul li {
+    font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -32,7 +47,7 @@ header nav li {
 }
 
 header nav ul li a {
-    color: white;
+    color: black;
     font-size: 20px;
     text-decoration: none;
 }
@@ -48,10 +63,26 @@ header nav ul li a {
     width: 100%;
 }
 
+.container > h2 {
+    font-weight: bold;
+}
+
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.destaque-entertainment > h3 {
+    color: rgb(255, 145, 43);
+}
+
+.destaque-sport > h3 {
+    color: green;
+}
+
+.destaque-news > h3 {
+    color: red;
 }
 
 #hightlight {
@@ -59,32 +90,40 @@ header .container {
 }
 
 h2, h3, p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-bottom: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
 h3 {
     margin-bottom: 8px;
+    font-size: 20px !important;
+    font-weight: bold !important;
 }
 
-#news {
+#news h2 {
     color:red;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-#sports {
-    color: green
+#sports h2 {
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
 }
 
-#entertainment {
-    color: rgb(255, 145, 43)
+#entertainment h2 {
+    color: rgb(255, 145, 43);
+    font-size: 24px;
+    font-weight: bold;
 }
 
 footer {
     background-color: black;
     color: white;
-    padding: 16px 0px;
+    padding: 5px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
+    align-items: center;
 }
 
 .columns {
@@ -92,20 +131,15 @@ footer {
     justify-content: space-between;
 }
 
-.area-colunas-container {
-    padding: 0px 15px;
-}
-
 .container .contact-methods {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
-
 }
 
 .contact-methods img {
     max-width: 24px;
 }
+
 
 form input,
 form button,
@@ -136,4 +170,25 @@ form textarea {
 
 .social-links {
     list-style: none;
+}
+
+.social-links img {
+    margin-left: 12px;
+}
+
+#contact {
+    padding: 20px;
+    background-color: rgba(20, 74, 223, 0.897);
+
+}
+
+#techsection h2 {
+    font-weight: bold !important;
+    color: rgba(20, 74, 223, 0.897);
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
 }
